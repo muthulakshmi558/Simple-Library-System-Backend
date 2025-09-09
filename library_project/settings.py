@@ -23,10 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_d^sd!mxeqw&&5!zsio$ke&#=m^g=#70#jg5afy9o-6vh_wxc+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['simple-library-system-backend.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
@@ -54,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # React dev server
+    "https://simple-library-system-frontend.vercel.app",  # React dev server
 ]
 
 ROOT_URLCONF = 'library_project.urls'
